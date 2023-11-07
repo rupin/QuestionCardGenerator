@@ -61,7 +61,7 @@ for index, row in df.iterrows():
             draw_wrapped_text(draw, f"{option}", options_text_positions[i], font, max_width=30)
         #continue
     # Save the image with overlayed text
-    output_path = f"output_question_{index + 1}.png"
+    output_path = f"cards/output_question_{index + 1}.png"
     template.save(output_path)
 
 print("Images generated successfully!")
